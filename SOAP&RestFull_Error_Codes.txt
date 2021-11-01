@@ -1,0 +1,28 @@
+SOAP -> 
+
+200 ok
+104 to 106 Parameter validation error
+108 Malformed xml
+302 Authentication failed
+303 incorrect privileges
+
+Restfull ->
+
+200 ok
+400 bad request
+401 Unauthorized
+404 Not found
+405 Method not allowed
+500 Internal server error
+503 service Unavailable
+
+
+SOAP UI
+1)Same problem for me on 4.5.1 Win 32. The proxy was enabled and set to port 8081. Disabling the proxy in Files->Preferences->Proxy Settings allowed it all to work.
+
+2)In my case the server were the service was installed was configured only for TLS. SSL was not allowed. So you have to update SoapUI vmoptions file by adding
+
+-Dsoapui.https.protocols=TLSv1.2
+You can find vmoptions file under SoapUI installation folder:
+
+C:\Program Files (x86)\SmartBear\SoapUI-5.0.0\bin\soapUI-5.0.0.vmoptions
