@@ -27,7 +27,7 @@ You can find vmoptions file under SoapUI installation folder:
 
 C:\Program Files (x86)\SmartBear\SoapUI-5.0.0\bin\soapUI-5.0.0.vmoptions
 
-Re: Error getting response;java.net.Unknown HostException
+3)Re: Error getting response;java.net.Unknown HostException
 You are missing host file details on your machine. This is the path:-
 
 C:\Windows\System32\drivers\etc
